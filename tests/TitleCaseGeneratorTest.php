@@ -28,13 +28,13 @@
         {
             //Arrange
             $test_PingPongGenerator = new PingPongGenerator();
-            $input = 5;
+            $input = 2;
 
             //Act
             $result = $test_PingPongGenerator->generatePingPongArray($input);
 
             //Assert
-            $this->assertEquals([1, 2, 3, 4, 5], $result);
+            $this->assertEquals([1, 2], $result);
 
         }
 
@@ -65,7 +65,7 @@
             $result = $test_PingPongGenerator->generatePingPongArray($input);
 
             //Assert
-            $this->assertEquals([1, 2, "Ping", 4, "Pong", 6], $result);
+            $this->assertEquals([1, 2, "Ping", 4, "Pong", "Ping"], $result);
         }
 
         //test 5 : input an int over 15 and program counts from 1 to that number and turns all numbers divisible by three into Ping and all number divisible by 5 into Pong and all numbers divisible by both 3 and 5 into PingPong
