@@ -7,6 +7,12 @@
 <body>
     <div class="container">
         <!-- put output here -->
+        <h1>Results</h1>
+        <ul>
+        {% for result in results %}
+            <li>{{ result }}</li>
+        {% endfor %}
+        </ul>
     </div>
 </body>
 </html>
